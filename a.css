@@ -74,7 +74,6 @@ a {
     max-width:940px;
     margin-left: auto;
     margin-right: auto;
-    background: white;
 
 }
 .userCard .pictureAndText {
@@ -137,9 +136,20 @@ hr {
     background:#E6686A;
     text-align: center;
 }
+.userCard>footer.media>a {
+    border-radius:50%;
+    display: inline-block;
+    width: 40px;
+    padding:5px 0;
+    line-height: 30px;
+    margin:7px 20px;
+}
 .userCard .media svg {
     width:30px;
     height: 30px;
-    fill:red;
+    fill:white;
     vertical-align: top;
+}
+.userCard .media>a:hover {
+    background:#CF505F;
 }
