@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: red;
+    background-color: #efefef;
+    color: white;
     margin:0;
 }
 a {
@@ -70,11 +70,11 @@ a {
     background-color:rgba(0,0,0,0.3);
 }
 .userCard {
-    border: 1px solid yellow;
     max-width:940px;
     margin-left: auto;
     margin-right: auto;
-
+    box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.1);
+    background-color:rgba(0,0,0,0.6);
 }
 .userCard .pictureAndText {
     padding:50px;
@@ -152,4 +152,133 @@ hr {
 }
 .userCard .media>a:hover {
     background:#CF505F;
+}
+body>main {
+    margin-top:-340px;
+}
+body>main .downloadcv-wrapper {
+    text-align: center;
+}
+body>main .downloadcv {
+    font-size: 14px;
+    line-height: 16px;
+    padding:21px 55px;
+    border:1px solid #CDCFD1;
+    background: #EFEFEF;
+    display: inline-block;
+    border-radius: 2px;
+    color:#3d4451;
+    font-weight: bold;
+    margin:32px 0;
+    transition: box-shadow 0.3s;
+}
+body>main .downloadcv:hover {
+    box-shadow: 8px 4px 13px 0px rgba(0,0,0,0.2);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+.jianjie {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: cursive;
+    color:#000;
+}
+section.skills,
+section.portfolio{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+}
+section.skills > h2,
+section.portfolio > h2 {
+    text-align: center;
+    color:#3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+section.skills>h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 48px;
+    
+}
+ol,ul {
+    list-style: none;
+}
+section.skills>ol {
+    background:white;
+    padding:42px 50px 10px;
+    margin-top:30px;
+}
+section.skills>ol>li {
+    width:48%;
+    float: left;
+    box-sizing: border-box;
+    color:#000;
+}
+section.skills>ol>li:nth-child(even){
+   float:right;
+}
+section.skills .bar {
+    height:5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin:4px 0 40px;
+}
+section.skills .bar .color {
+    height:100%;
+    width: 70%;
+    background:red;
+    border-radius: 2px;
+}
+section.portfolio {
+    text-align: center;
+}
+section.portfolio > nav {
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+section.portfolio > nav >ol {
+    display:inline-block;
+    vertical-align: top;
+    color: red;
+}
+section.portfolio > nav > ol > li {
+    float: left;
+    padding-right:40px;
+    cursor: pointer;
+}
+section.portfolio > nav > ol > li:nth-child(3){
+    padding-right:0;
+}
+section.portfolio .bar1 {
+    border:1px solid black;
+    height: 5px;
+    background: #fff;
+    margin:5px 0;
+    border-radius: 2px;
+}
+section.portfolio .bar1-inner {
+    height:100%;
+    background:red;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+section.portfolio .bar1.state-1 .bar1-inner{
+    margin-left: 0;
+    width: 40px; 
+}
+section.portfolio .bar1.state-2 .bar1-inner{
+    margin-left: 65px;
+    width: 50px; 
+}
+section.portfolio .bar1.state-3 .bar1-inner{
+    margin-left: 141px;
+    width: 95px; 
 }
