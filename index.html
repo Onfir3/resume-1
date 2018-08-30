@@ -39,7 +39,7 @@
       <div id='siteWelcome' class="site-welcome active">
           <div class="loading"></div>
       </div>
-      <div class="topNavBar ">
+      <div id="TopNavBar" class="topNavBar ">
       <div class="topNavBarinner clearfix">
       <a class="logo" href="#" alt="logo" style="float: left;">
         <span class="rs">RS</span><span class="card">card</span>
@@ -202,6 +202,13 @@
         siteWelcome.classList.remove('active')
       },1000)
     
+      window.onscroll = function(xxx){
+        if(window.scrollY > 0){
+          TopNavBar.classList.add('sticky')
+        }else{
+          TopNavBar.classList.remove('sticky')
+        }
+      }
     </script>
   </body>
 </html>
