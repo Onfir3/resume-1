@@ -224,16 +224,10 @@
       let liTags = document.getElementsByClassName('menuTigger')
       for(let i=0; i<liTags.length; i++){
         liTags[i].onmouseenter = function(x){
-          let li = x.currentTarget
-          let brother = li.getElementsByTagName('ul')[0]
-          
-          brother.classList.add('active')
+          x.currentTarget.classList.add('active')
         }
         liTags[i].onmouseleave = function(x){
-          let li = x.currentTarget
-          let brother = li.getElementsByTagName('ul')[0]
-          
-          brother.classList.remove('active')
+          x.currentTarget.classList.remove('active')
         }
       }
     </script>
