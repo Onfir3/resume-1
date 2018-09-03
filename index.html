@@ -263,7 +263,7 @@
       specialTags[i].classList.add('offset')
     }
     setTimeout(function (){
-      yyy()
+      findClosest()
     }, 600);
     
     window.onscroll = function (xxx) {
@@ -272,9 +272,9 @@
       } else {
         TopNavBar.classList.remove('sticky')
       }
-      yyy()
+      findClosest()
     }
-    function yyy(){
+    function findClosest(){
       let specialTags = document.querySelectorAll('[data-x]')
     let minIndex = 0 
     for(let i = 1; i<specialTags.length; i++){
