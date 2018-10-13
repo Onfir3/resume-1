@@ -2,6 +2,7 @@ body {
     background-color: #efefef;
     color: white;
     margin:0;
+    padding-bottom: 120px;
 }
 a {
     color:inherit;
@@ -311,46 +312,11 @@ section.skills.offset .color{
 section.portfolio {
     text-align: center;
 }
-section.portfolio > nav {
-    display:inline-block;
-    vertical-align: top;
-    margin-top: 32px;
-}
-section.portfolio > nav >ol {
-    display:inline-block;
-    vertical-align: top;
-    color: red;
-}
-section.portfolio > nav > ol > li {
-    float: left;
-    padding-right:40px;
-    cursor: pointer;
-}
-section.portfolio > nav > ol > li:nth-child(3){
-    padding-right:0;
-}
-section.portfolio .bar1 {
-    border:1px solid black;
-    height: 5px;
-    background: #fff;
-    margin:5px 0;
-    border-radius: 2px;
-}
-section.portfolio .bar1-inner {
-    height:100%;
-    background:red;
-    border-radius: 2px;
-    transition: all 0.2s;
-}
-section.portfolio .bar1.state-1 .bar1-inner{
-    margin-left: 0;
-    width: 40px; 
-}
-section.portfolio .bar1.state-2 .bar1-inner{
-    margin-left: 65px;
-    width: 50px; 
-}
-section.portfolio .bar1.state-3 .bar1-inner{
-    margin-left: 141px;
-    width: 95px; 
+
+.swiper-container {
+    width: 888px;
+    height: 666px;
+}  
+.swiper-slide {
+    margin-top: 60px;
 }
