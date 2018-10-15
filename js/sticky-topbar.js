@@ -3,15 +3,12 @@ setTimeout(function () {
 }, 500)
 
 
-
-
-window.addEventListener('scroll',function(xxx){
-    if (window.scrollY > 0) {
-        TopNavBar.classList.add('sticky')
-    } else {
-        TopNavBar.classList.remove('sticky')
-    }
-})
-
-
-
+!function(){
+    window.addEventListener('scroll',function(xxx){
+        if (window.scrollY > 0) {
+            TopNavBar.classList.add('sticky')
+        } else {
+            TopNavBar.classList.remove('sticky')
+        }
+    })
+}.call()
