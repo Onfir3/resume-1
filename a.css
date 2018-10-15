@@ -259,6 +259,7 @@ section.portfolio{
     margin-left: auto;
     margin-right: auto;
     margin-top:60px;
+    
 }
 section.skills > h2,
 section.portfolio > h2 {
@@ -276,6 +277,7 @@ section.skills>h3 {
 }
 ol,ul {
     list-style: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 section.skills>ol {
     background:white;
@@ -311,12 +313,13 @@ section.skills.offset .color{
 }
 section.portfolio {
     text-align: center;
+    
 }
-
-.swiper-container {
-    width: 888px;
-    height: 666px;
-}  
-.swiper-slide {
-    margin-top: 60px;
+section.portfolio .swiper-container {
+    width: 940px;
+    height: 705px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+section.portfolio > h2 {
+    margin-bottom: 32px;
 }
