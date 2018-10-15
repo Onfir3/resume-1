@@ -277,12 +277,12 @@ section.skills>h3 {
 }
 ol,ul {
     list-style: none;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 section.skills>ol {
     background:white;
     padding:42px 50px 10px;
     margin-top:30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 section.skills>ol>li {
     width:48%;
