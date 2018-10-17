@@ -7,11 +7,18 @@ AV.init({
 });
 console.log('2')
 
+let myForm = document.querySelector('#postMessageForm')
 
-var TestObject = AV.Object.extend('TestObject');
-var testObject = new TestObject();
-testObject.save({
-  words: 'Hello World!'
-}).then(function(object) {
-  alert('LeanCloud Rocks!');
+myForm.addEventListener('submit',function(e){
+    e.preventDefault()
+    let content = myForm.querySelector('input[name=content]').value
+    var message = AV.Object.extend('message');
+    var message = new message();
+    message.save({
+    content: content
+    }).then(function(object) {
+    alert('LeanCloud Rocks!');
 })
+})
+
+
