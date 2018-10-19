@@ -62,7 +62,6 @@
                 let messageList = document.querySelector('#messageList')
                 messageList.appendChild(li)
                 myForm.querySelector('input[name=content]').value = ''
-                console.log('1')
             })
         }
     }

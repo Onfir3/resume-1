@@ -6,8 +6,7 @@
         initAnimation: function () {
             function animate(time) {
                 requestAnimationFrame(animate);
-                TWEEN.update(time);
-                
+                TWEEN.update(time);   
             }
             requestAnimationFrame(animate);
         },
