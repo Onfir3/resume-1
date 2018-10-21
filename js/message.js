@@ -2,21 +2,14 @@
     var view = View('section.message')
     var model = Model({resourceName:'message'})
 
-    var controller = {
-        view: null,
-        model: null,
+    var controller = Controller({
         messageList: null,
-        init: function (view, model) {
-            this.view = view
-            this.model = model
-
-            this.model.init()
+        form: null,
+        init: function(){
             this.messageList = view.querySelector('#messageList')
             this.form = view.querySelector('form')
             this.loadMessages()
-            this.bindEvents()
         },
-
         loadMessages: function () {
             this.model.fetch().then(
                 (messages) => {
@@ -49,9 +42,9 @@
                 messageList.appendChild(li)
                 myForm.querySelector('input[name=content]').value = ''
             })
-        }
-    }
-    controller.init(view, model)
+        },
+    })
+    controller.init(view, model) 
 }.call()
 
 
