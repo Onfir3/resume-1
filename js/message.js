@@ -5,7 +5,7 @@
     var controller = Controller({
         messageList: null,
         form: null,
-        init: function(){
+        init: function(view,model){
             this.messageList = view.querySelector('#messageList')
             this.form = view.querySelector('form')
             this.loadMessages()
