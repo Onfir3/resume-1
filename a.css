@@ -426,23 +426,3 @@ figure > figcaption a{
     background: #ddd;
     border: 1px solid rgba(163, 161, 161, 0.514);
 }
-
-/*message*/
-section.portfolio > h2,
-section.message > h2 {
-  margin-bottom: 32px; }
-
-section.message {
-  margin-top: 60px;
-  text-align: center;
-  color: black; }
-
-section.message > ol {
-  max-width: 940px;
-  margin: 0 auto;
-  border-top: 1px solid #DDD; }
-
-section.message > ol > li {
-  text-align: left;
-  padding: 16px;
-  border-bottom: 1px solid #DDD; }
