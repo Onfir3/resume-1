@@ -243,8 +243,11 @@ body > main .downloadcv:hover {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-size: 20px;
   font-family: cursive;
-  color: #000; }
+  color: #000;
+  margin-top: 30px;
+ }
 
 section.skills,
 section.portfolio {
@@ -254,8 +257,8 @@ section.portfolio {
   margin-top: 60px; }
 
 section.skills > h2,
-section.message > h2,
-section.portfolio > h2 {
+section.portfolio > h2,
+section.me > h2 {
   text-align: center;
   color: #3d4451;
   font-size: 34px;
@@ -300,16 +303,29 @@ section.skills .bar .color {
   transform: translateX(0);
   transition: all 1s; }
 
+section.skills .bar .color.c1{
+  width: 80%;
+}
+section.skills .bar .color.c2{
+  width: 65%;
+}
+section.skills .bar .color.c5{
+  width: 40%;
+}
+
 section.skills.offset .color {
   transform: translateX(-100%); }
 
 section.portfolio {
-  text-align: center; }
+  text-align: center;
+ }
 
 section.portfolio .swiper-container {
   width: 940px;
   height: 705px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
 
 /* works */
 
@@ -382,8 +398,12 @@ section.portfolio .swiper-container {
     background-size: cover;
 }
 .worksList  ul > li  figure > div.img.i6{
-    background:url(../img/nav.png) center center no-repeat;
+    background:url(./img/轮播/pikachu.jpg) center center no-repeat;
     background-size: cover;
+}
+.worksList  ul > li  figure > div.img.i7{
+  background:url(./img/轮播/fanyi.png) center center no-repeat;
+  background-size: cover;
 }
 .worksList  ul > li  figure > figcaption{
    flex:0.7;

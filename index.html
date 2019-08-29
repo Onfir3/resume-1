@@ -117,9 +117,6 @@
     <p class="downloadcv-wrapper">
       <a class="downloadcv" href="./PDF.pdf" target="_blank" download>下载 PDF 简历</a>
     </p>
-    <p class="jianjie">
-      我叫文登。
-    </p>
 
   </main>
   <section id="siteSkills" class="skills" data-x>
@@ -130,7 +127,7 @@
           HTML 5 &AMP; CSS 3
         </h3>
         <div class="bar">
-          <div class="color"></div>
+          <div class="color c1"></div>
         </div>
       </li>
       <li>
@@ -138,7 +135,7 @@
           JavaScript
         </h3>
         <div class="bar">
-          <div class="color"></div>
+          <div class="color c2"></div>
         </div>
       </li>
       <li>
@@ -146,7 +143,7 @@
           jQuery
         </h3>
         <div class="bar">
-          <div class="color"></div>
+          <div class="color c3"></div>
         </div>
       </li>
       <li>
@@ -154,7 +151,7 @@
           Vue
         </h3>
         <div class="bar">
-          <div class="color"></div>
+          <div class="color c4"></div>
         </div>
       </li>
       <li>
@@ -162,7 +159,7 @@
           React
         </h3>
         <div class="bar">
-          <div class="color"></div>
+          <div class="color c5"></div>
         </div>
       </li>
       <li>
@@ -170,7 +167,7 @@
           HTTP
         </h3>
         <div class="bar">
-          <div class="color"></div>
+          <div class="color c6"></div>
         </div>
       </li>
     </ol>
@@ -184,7 +181,9 @@
           <img class="swiper-slide" src="./img/轮播/canvas.jpg" alt="canvas">
           <img class="swiper-slide" src="./img/轮播/Carousel.jpg" alt="Carousel">
           <img class="swiper-slide" src="./img/轮播/music.jpg" alt="music">
+          <img class="swiper-slide" src="./img/轮播/pikachu.jpg" alt="pikachu">
           <img class="swiper-slide" src="./img/轮播/blog.jpg" alt="blog">
+          <img class="swiper-slide" src="./img/轮播/fanyi.png" alt="fanyi">
       </div>
       <!-- 如果需要分页器 -->
       <div class="swiper-pagination"></div>
@@ -195,14 +194,38 @@
   </div>
   </div> 
   </section>
-  <section>
+  <section data-x>
     <div class="worksList">
       <ul>
+          <li>
+              <figure>
+                <div class="img i1"></div>
+                <figcaption>
+                  <h3>键盘导航</h3>
+                  <hr>
+                  <div class="descript">
+                    <p>描述:</p>
+                    <p class="descript-content">
+                      用CSS构建出一个键盘的样式，并且对应的每个按键都可编辑对应的网站，同时抓取对应网站的favicon展示在相应的键位上，编辑完成后，可以通过敲击键盘对应键位进行页面访问。
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="workFooter">
+                    <a href="https://github.com/Onfir3/myBookmarks" target="_blank">
+                      <span class="button">源码链接</span>
+                    </a>
+                    <a href="https://onfir3.github.io/myBookmarks/" target="_blank">
+                      <span class="button">PC端页面</span>
+                    </a>
+                  </div>  
+                </figcaption>
+              </figure>
+            </li>
         <li>
           <figure>
-            <div class="img i1"></div>
+            <div class="img i7"></div>
             <figcaption>
-              <h3>键盘导航</h3>
+              <h3>翻译小程序</h3>
               <hr>
               <div class="descript">
                 <p>描述:</p>
@@ -212,11 +235,8 @@
               </div>
               <hr>
               <div class="workFooter">
-                <a href="https://github.com/Onfir3/myBookmarks" target="_blank">
+                <a href="https://github.com/Onfir3/fanyi_demo" target="_blank">
                   <span class="button">源码链接</span>
-                </a>
-                <a href="https://onfir3.github.io/myBookmarks/" target="_blank">
-                  <span class="button">PC端页面</span>
                 </a>
               </div>  
             </figcaption>
@@ -322,8 +342,61 @@
             </figcaption>
           </figure>
         </li>
+        <li>
+          <figure>
+            <div class="img i6"></div>
+            <figcaption>
+              <h3>画一个皮卡丘</h3>
+              <hr>
+              <div class="descript">
+                <p>描述:</p>
+                <p class="descript-content">
+                  是一个使用纯原生 JS 开发的，动态显示 CSS 画一个皮卡丘过程的小作品。该作品主要思路是通过间隔计时器遍历预先设置在 preview 标签内代码，将其一个个显示在页面上，并在 style 标签上作同样处理，以使代码 CSS 生效。此外，实现了 CSS 高亮效果及调速功能。
+                </p>
+              </div>
+              <hr>
+              <div class="workFooter">
+                <a href="https://github.com/Onfir3/Pikachu" target="_blank">
+                  <span class="button">源码链接</span>
+                </a>
+                <a href="https://onfir3.github.io/Pikachu/" target="_blank">
+                  <span class="button">PC端页面</span>
+                </a>
+              </div>  
+            </figcaption>
+          </figure>
+        </li>
       </ul>
     </div>
+  </section>
+  <section data-x class="me">
+    <h2>关于我</h2>
+    <div class="descript">
+    <p class="jianjie">
+      熟练 HTML、DIV + CSS 的页面布局，能根据设计图像素级完成页面制作。
+    </p>
+    <p class="jianjie">
+      熟悉 HTML 5 及语义化，了解 Canvas 动画制作，掌握 CSS 3 动画、过渡效果等常用技术。
+    </p>
+    <p class="jianjie">
+      熟悉原生 JavaScript，会使用 ES6+ 常用规范，了解 jQuery 常用 API 及思想。
+    </p>
+    <p class="jianjie">
+      熟悉 Vue 常用功能，理解如生命周期、组件、虚拟 DOM、数据响应式等概念，能够使用 Vue 全家桶开发项目，对 React 有一定了解
+    </p>
+    <p class="jianjie">
+      熟悉模块化、工程化开发流程。
+    </p>
+    <p class="jianjie">
+      有移动端开发经验，会使用REM、vw/ vh、响应式 等技术制作适配手机设备的页面。
+    </p>
+    <p class="jianjie">
+      了解 HTTP 相关知识，了解常见的 Web 性能优化方案。
+    </p>
+    <p class="jianjie">
+      熟练使用 VsCode、WebStorm、less、Git 等开发工具。
+    </p>
+  </div>
   </section>
 
 
