@@ -446,3 +446,8 @@ figure > figcaption a{
     background: #ddd;
     border: 1px solid rgba(163, 161, 161, 0.514);
 }
+.highlight-1 {
+  color: #FF5700;
+  border-radius: 5px;
+  background: #efefef;
+}
